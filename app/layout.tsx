@@ -1,3 +1,4 @@
+import "@/app/ui/global.css";
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +6,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header>
+          Acme
+        </header>
+        {children}
+        <footer>
+          Desarrollado por Jancker Sepulveda &copy; 2023
+        </footer>
+        </body>
     </html>
   );
 }
